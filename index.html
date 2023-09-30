@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Saniap</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/db7dcbdb94.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="images/Wallpaper.png" class="Logo" />
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#project">Portfolio</a></li>
+            <li><a href="#sosmed">Social media</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class=" fas fa-regular fa-circle-xmark" onclick="closemenu()"></i>
+          </ul>
+          <i class=" fas fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="heading">
+          <p><span>Informatics</span> Student</p>
+          <h1>
+            Hi, I'm Sani <span>Akhzam</span> <br />
+            Prakistiyanto
+          </h1>
+        </div>
+      </div>
+    </div>
+
+    <!-- about -->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="images/Sani.png" alt="" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="font">About Me</h1>
+            <p>
+              Saya adalah seorang mahasiswa teknik informatika dari Institut
+              Teknologi Telkom Purwokerto. Saya berasal dari Kebumen Jawa
+              tengah. Saya memiliki ketertarikana terhadap terhadap UI/UX
+              desain, selain UI/UX desain saya juga cukup tertarik terhadap
+              Mobile dan Website programming.
+            </p>
+
+            <div class="title">
+              <p class="links active" onclick="opentab('skills')">Skills</p>
+              <p class="links" onclick="opentab('experience')">Experience</p>
+              <p class="links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="content active" id="skills">
+              <ul>
+                <li>
+                  <span>UI/UX</span><br />Design website/Mobile User Interface
+                </li>
+                <li>
+                  <span>Java Language</span><br />Design desktop apps for
+                  showroom management
+                </li>
+                <li>
+                  <span>Logo Design</span><br />Design logo for small and medium
+                  enterprise
+                </li>
+              </ul>
+            </div>
+            <div class="content" id="experience">
+              <ul>
+                <li>
+                  <span>Project</span><br />Make a desktop application for car
+                  showroom
+                </li>
+                <li>
+                  <span>Collabs</span><br />Make an User Interface for mobile
+                  application
+                </li>
+              </ul>
+            </div>
+            <div class="content" id="education">
+              <ul>
+                <li>
+                  <span>Collage</span><br />
+                  Telkom Purwokerto Institute of Technology
+                </li>
+                <li>
+                  <span>Senior high school</span><br />Senior high school 1
+                  karanganyar
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- My Project -->
+    <div id="project">
+      <div class="container">
+        <h1 class="font">My Project</h1>
+        <div class="projectlist">
+          <div class="project">
+            <img src="images/tsuki.png" alt="CarShowroom" />
+            <div class="layer">
+              <h3>UI ChatBot</h3>
+              <p>
+                 User Interface chat bot yang dinamakan TsukiBot. Chat bot ini akan berperan sebagai teman yang akan menemati kita ketika kita sedang tidak mempunyai teman untuk berbicarca.
+              </p>
+              <a href="#https://www.figma.com/file/v9gKDkecYueKvE8YkjBMwR/Untitled?type=design&node-id=0%3A1&mode=design&t=XCghsx68vfoyixm3-1"><i class="fa-solid fa-up-right-from-square"></i></i></a>
+            </div>
+          </div>
+          <div class="project">
+            <img src="images/Monitoring.png" alt="Monitoring" />
+            <div class="layer">
+              <h3>UI Monitoring Kolam</h3>
+              <p>
+                Perancangan User Interface untuk memonitoring kolam ikan. daiantaranya yang dimonitoring adalah tinggi air, suhu air, dan aliran air.
+              </p>
+              <a href="#https://www.figma.com/file/v9gKDkecYueKvE8YkjBMwR/Untitled?type=design&node-id=0%3A1&mode=design&t=XCghsx68vfoyixm3-1"><i class="fa-solid fa-up-right-from-square"></i></a>
+            </div>
+          </div>
+          <div class="project">
+            <img src="images/tsuki.png" alt="Travel" />
+            <div class="layer">
+              <h3>UI ChatBot</h3>
+              <p>
+                User Interface chat bot yang dinamakan TsukiBot. Chat bot ini akan berperan sebagai teman yang akan menemati kita ketika kita sedang tidak mempunyai teman untuk berbicarca.
+              </p>
+              <a href="#https://www.figma.com/file/v9gKDkecYueKvE8YkjBMwR/Untitled?type=design&node-id=0%3A1&mode=design&t=XCghsx68vfoyixm3-1"><i class="fa-solid fa-up-right-from-square"></i></a>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="btn">See More</a>
+      </div>
+    </div>
+
+    <!-- Social media -->
+    <div id="sosmed">
+      <div class="container">
+        <h1 class="font">My Social Media</h1>
+        <div class="sosmedlist">
+          <div>
+            <i class="fa-brands fa-github"></i>
+            <h2>Github</h2>
+            <p>
+              Github adalah tempat saya menyimpandan berkolaborasi dalam pengembangan perangkat lunak dan proyek-proyek kode sumber terbuka dengan tim dan komunitas pengembang di seluruh dunia.
+            </p>
+            <a href="#">Go To Github</a>
+          </div>
+          <div>
+            <i class="fa-brands fa-linkedin-in"></i>
+            <h2>Linked in</h2>
+            <p>
+              LinkedIn adalah tempat saya untuk berkoneksi dengan profesional dari berbagai bidang, membangun jejaring bisnis, dan berbagi informasi serta pengalaman dalam dunia kerja dan karier.
+            </p>
+            <a href="#https://www.linkedin.com/in/saniap/">Go To LinkedIn</a>
+          </div>
+          <div>
+            <i class="fa-brands fa-github"></i>
+            <h2>Github</h2>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia
+              ipsum nostrum amet dignissimos sequi vero error quidem quasi ipsam
+              aut repudiandae tenetur, facere id dolorem velit aliquam numquam.
+              Et, eaque.
+            </p>
+            <a href="#">Go To Github</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+
+    <!-- contact -->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="left">
+            <h1 class="font">Contact Me</h1>
+            <p><i class="fa-solid fa-paper-plane"></i>Saniakhzam@gmail.com</p>
+            <p><i class="fa-solid fa-phone"></i>088227990636</p>
+            <div class="social">
+              <a href="https://www.facebook.com/" target="_blank" ><i class="fa-brands fa-facebook"></i></a>
+              <a href="https://www.instagram.com/akhzamp_/" target="_blank" ><i class="fa-brands fa-instagram"></i></a>
+              <a href="https://wa.me/+6288227990636" target="_blank" ><i class="fa-brands fa-whatsapp"></i></a>
+              <a href="https://www.tiktok.com/@saniap3?is_from_webapp=1&sender_device=pc target="_blank" "><i class="fa-brands fa-tiktok"></i></i></a>
+            </div>
+            <a href="images/Sani CV.pdf" download class="btn btn2">Download My CV</a>
+          </div>
+          <div class="right">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your Name" required>
+              <input type="email" nmae="Email" placeholder="Your Email" required>
+              <textarea name="Message" rows="10" placeholder="Yoir Message"></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>copyright @saniap made with dikejar deadline</p>
+      </div>
+    </div>
+
+    <script>
+      var links = document.getElementsByClassName("links");
+      var contents = document.getElementsByClassName("content");
+      function opentab(tabname) {
+        for (link of links) {
+          link.classList.remove("active");
+        }
+
+        for (content of contents) {
+          content.classList.remove("active");
+        }
+        event.currentTarget.classList.add("active");
+        document.getElementById(tabname).classList.add("active");
+      }
+    </script>
+
+    <script>
+      var sidemenu = document.getElementById("sidemenu");
+
+      function openmenu(){
+        sidemenu.style.right = "0";
+      }
+      function closemenu(){
+        sidemenu.style.right = "-200px";
+      }
+    </script>
+
+    <script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbwHI9l1esl6q4wF_68rhniC-OeCCt_U6LjoR2OJHMDjiPH3034uRA9_by4pS76B5P9y/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const msg = document.getElementById("msg")
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        msg.innerHTML = "Message sent sucessfully"
+        setTimeout(function(){
+          msg.innerHTML = ""
+        },5000)
+        form.reset()
+      })
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+
+  </body>
+</html>
